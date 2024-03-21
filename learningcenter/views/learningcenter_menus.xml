@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+        <!-- Main Menu -->
+        <menuitem id="menu_learningcenter" name="Learning Center" sequence="10"/>
+
+        <!-- Submenus -->
+        <menuitem id="menu_learningcenter_courses" name="Kurslar" parent="menu_learningcenter" action="action_learningcenter_course"/>
+        <menuitem id="menu_learningcenter_groups" name="Guruhlar" parent="menu_learningcenter" action="action_learningcenter_group"/>
+        <menuitem id="menu_learningcenter_student" name="O'quvchilar" parent="menu_learningcenter" action="action_learningcenter_student"/>
+        <menuitem id="menu_learningcenter_payments" name="To'lovlar" parent="menu_learningcenter" action="action_learningcenter_payment"/>
+        <menuitem id="menu_learningcenter_teachers" name="O'qituvchilar" parent="menu_learningcenter" action="action_learningcenter_teacher"/>
+    </data>
+</odoo>

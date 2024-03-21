@@ -1,0 +1,47 @@
+<odoo>
+    <data>
+
+        <!-- Course Action -->
+        <record id="action_learningcenter_course" model="ir.actions.act_window">
+            <field name="name">Kurslar</field>
+            <field name="res_model">learningcenter.course</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Group Action -->
+        <record id="action_learningcenter_group" model="ir.actions.act_window">
+            <field name="name">Guruhlar</field>
+            <field name="res_model">learningcenter.group</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Payment Action -->
+        <record id="action_learningcenter_payment" model="ir.actions.act_window">
+            <field name="name">To'lovlar</field>
+            <field name="res_model">learningcenter.payment</field>
+            <field name="limit">1</field>
+            <field name="view_mode">tree,form,graph</field>
+            <field name="view_ids" eval="[(5, 0, 0), 
+                                (0, 0, {'view_mode': 'tree', 'view_id': ref('learningcenter_payment_tree_view')}), 
+                                (0, 0, {'view_mode': 'form', 'view_id': ref('learningcenter_payment_form_view')}), 
+                                (0, 0, {'view_mode': 'graph', 'view_id': ref('view_learningcenter_payment_graph')})]"/>
+        </record>
+<!-- groups="base.group_multi_company" -->
+<!-- default_order="priority,id" -->
+<!-- widget="boolean_toggle" -->
+
+        <!-- Teacher Action -->
+        <record id="action_learningcenter_teacher" model="ir.actions.act_window">
+            <field name="name">O'qituvchilar</field>
+            <field name="res_model">learningcenter.teacher</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Student Action -->
+        <record id="action_learningcenter_student" model="ir.actions.act_window">
+            <field name="name">O'quvchilar</field>
+            <field name="res_model">learningcenter.student</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <record id="time_range_1" model="learningcenter.time.model">
+            <field name="name">09:00</field>
+        </record>
+        <record id="time_range_2" model="learningcenter.time.model">
+            <field name="name">10:00</field>
+        </record>
+        <record id="time_range_3" model="learningcenter.time.model">
+            <field name="name">11:00</field>
+        </record>
+        <record id="time_range_4" model="learningcenter.time.model">
+            <field name="name">12:00</field>
+        </record>
+        <record id="time_range_5" model="learningcenter.time.model">
+            <field name="name">13:00</field>
+        </record>
+        <record id="time_range_6" model="learningcenter.time.model">
+            <field name="name">14:00</field>
+        </record>
+        <record id="time_range_7" model="learningcenter.time.model">
+            <field name="name">15:00</field>
+        </record>
+        <record id="time_range_8" model="learningcenter.time.model">
+            <field name="name">16:00</field>
+        </record>
+    </data>
+</odoo>

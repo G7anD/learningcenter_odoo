@@ -1,0 +1,62 @@
+<odoo>
+    <data>
+
+        <!-- Student Tree View -->
+        <record id="learningcenter_student_tree_view" model="ir.ui.view">
+            <field name="name">learningcenter.student.tree</field>
+            <field name="model">learningcenter.student</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="phone_number"/>
+                    <field name="birthdate"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Student Form View -->
+        <record id="learningcenter_student_form_view" model="ir.ui.view">
+            <field name="name">learningcenter.student.form</field>
+            <field name="model">learningcenter.student</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <header>
+                            <h1>O'quvchi ma'lumotlarini o'zgartirish/qo'shish</h1>
+                        </header>
+                        <separator/>
+
+                        <group>
+                            <field name="name"/>
+                            <field name="phone_number"/>
+                            <field name="birthdate"/>
+                            <field name="description"/>
+                        </group>
+                    <notebook>
+                        <page string="Guruhlari">
+                            <group>
+                                <field name="group_ids">
+                                    <tree>
+                                        <field name="name"/>
+                                        <field name="room"/>
+                                        <field name="start_time"/>
+                                        <field name="end_time"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                        <page string="To'lovlari">
+                            <group>
+                                <field name="payment_ids" string=""/>
+                            </group>
+                        </page>
+
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

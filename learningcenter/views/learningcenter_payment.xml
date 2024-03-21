@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+        <!-- Payment Tree View -->
+        <record id="learningcenter_payment_tree_view" model="ir.ui.view">
+            <field name="name">learningcenter.payment.tree</field>
+            <field name="model">learningcenter.payment</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="group_id"/>
+                    <field name="student_id"/>
+                    <field name="amount"/>
+                    <field name="payment_datetime"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Payment Form View -->
+        <record id="learningcenter_payment_form_view" model="ir.ui.view">
+            <field name="name">learningcenter.payment.form</field>
+            <field name="model">learningcenter.payment</field>
+
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="group_id"/>
+                            <field name="student_id"/>
+                            <field name="amount"/>
+                            <field name="payment_datetime"/>
+                            <field name="chequee"/>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Graph View -->
+        <record id="view_learningcenter_payment_graph" model="ir.ui.view">
+            <field name="name">learningcenter.payment.graph</field>
+            <field name="model">learningcenter.payment</field>
+            <field name="arch" type="xml">
+                <graph string="Payment Analysis" type="bar">
+                    <field name="payment_datetime" type="row" interval="day"/>
+                    <field name="amount" type="measure"/>
+                </graph>
+            </field>
+        </record>
+    </data>
+</odoo>

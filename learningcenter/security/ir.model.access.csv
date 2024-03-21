@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+learningcenter.access_learningcenter_course,access_learningcenter_course,learningcenter.model_learningcenter_course,,1,1,1,1
+learningcenter.access_learningcenter_group,access_learningcenter_group,learningcenter.model_learningcenter_group,,1,1,1,1
+learningcenter.access_learningcenter_student,access_learningcenter_student,learningcenter.model_learningcenter_student,,1,1,1,1
+learningcenter.access_learningcenter_teacher,access_learningcenter_teacher,learningcenter.model_learningcenter_teacher,,1,1,1,1
+learningcenter.access_learningcenter_payment,access_learningcenter_payment,learningcenter.model_learningcenter_payment,,1,1,1,1
+learningcenter.access_weekday_model,access_weekday_model,learningcenter.model_weekday_model,,1,1,1,1
+learningcenter.access_learningcenter_time_model,access_learningcenter_time_model,learningcenter.model_learningcenter_time_model,,1,1,1,1

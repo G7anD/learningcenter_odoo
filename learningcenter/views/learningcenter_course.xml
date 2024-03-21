@@ -1,0 +1,39 @@
+<odoo>
+    <data>
+
+        <!-- Course Tree View -->
+        <record id="learningcenter_course_tree_view" model="ir.ui.view">
+            <field name="name">learningcenter.course.tree</field>
+            <field name="model">learningcenter.course</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="price"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Course Form View -->
+        <record id="learningcenter_course_form_view" model="ir.ui.view">
+            <field name="name">learningcenter.course.form</field>
+            <field name="model">learningcenter.course</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="price"/>
+                        </group>
+                        <notebook>
+                            <page string="Guruhlar">
+                                <field name="group_ids"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

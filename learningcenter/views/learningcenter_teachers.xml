@@ -1,0 +1,43 @@
+
+<odoo>
+    <data>
+
+        <!-- Teacher Tree View -->
+        <record id="learningcenter_teacher_tree_view" model="ir.ui.view">
+            <field name="name">learningcenter.teacher.tree</field>
+            <field name="model">learningcenter.teacher</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="phone_number"/>
+                    <field name="birthdate"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Teacher Form View -->
+        <record id="learningcenter_teacher_form_view" model="ir.ui.view">
+            <field name="name">learningcenter.teacher.form</field>
+            <field name="model">learningcenter.teacher</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="phone_number"/>
+                            <field name="birthdate"/>
+                            <field name="description"/>
+                        </group>
+                        <notebook>
+                            <page string="Guruhlar">
+                                <field name="group_ids"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <record id="weekday_1" model="weekday.model">
+            <field name="name">Dushanba</field>
+        </record>
+        <record id="weekday_2" model="weekday.model">
+            <field name="name">Seshanba</field>
+        </record>
+        <record id="weekday_3" model="weekday.model">
+            <field name="name">Chorshanba</field>
+        </record>        
+        <record id="weekday_4" model="weekday.model">
+            <field name="name">Payshanba</field>
+        </record>        
+        <record id="weekday_5" model="weekday.model">
+            <field name="name">Juma</field>
+        </record>        
+        <record id="weekday_6" model="weekday.model">
+            <field name="name">Shanba</field>
+        </record>        
+        <record id="weekday_7" model="weekday.model">
+            <field name="name">Yakshanba</field>
+        </record>
+    </data>
+</odoo>
